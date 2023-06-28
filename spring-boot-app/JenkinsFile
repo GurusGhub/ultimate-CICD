@@ -8,12 +8,10 @@ pipeline {
 stages {
 stage('Build and Test') {
       steps {
-        sh ""
         sh 'ls -ltr'
         // build the project and create a JAR file
         sh 'cd mytest/spring-boot-app && mvn clean package'
-        ""
-      }
+       }
     }
 }
 }
